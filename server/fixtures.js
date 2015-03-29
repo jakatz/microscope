@@ -31,7 +31,7 @@ if (Posts.find().count() === 0) {
   Comments.insert({
     postId: telescopeId,
     userId: sacha._id,
-    author: sacha.profile,name,
+    author: sacha.profile.name,
     submitted: new Date(now - 3 * 3600 * 1000),
     body: 'You sure can Tom!'
   });
